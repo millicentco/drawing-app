@@ -18,7 +18,17 @@ const drawCircle = (x, y) => {
   ctx.arc(x, y, size, 0, Math.PI * 2);
   ctx.fillStyle = color;
   ctx.fill();
-};
+};let size = 10;
+let color = "black";
+let x;
+let y;
+let isPressed = false;
+
+const drawCircle = (x, y) => {
+  ctx.beginPath();
+  ctx.arc(x, y, size, 0, Math.PI * 2);
+  ctx.fillStyle = color;
+  ctx.fill();
 
 const drawLine = (x1, y1, x2, y2) => {
   ctx.beginPath();
